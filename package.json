@@ -2,17 +2,19 @@
   "name": "simple-node-firebase-backend-ts",
   "version": "0.0.1",
   "description": "simple backend to connect to firebase store and provide auth",
-  "main": "index.ts",
+  "main": "src/index.ts",
   "scripts": {
-    "start": "tsc index.ts && npx nodemon index.ts",
+    "compile": "tsc",
+    "run": "nodemon dist/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Anton Evlampeev",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.19.2",
     "axios": "^1.6.8",
-    "cors": "^2.8.5"
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "firebase": "^10.11.1"
   },
   "devDependencies": {
     "@types/cors": "^2.8.17",
